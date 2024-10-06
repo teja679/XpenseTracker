@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple and intuitive web application built with React.JS to help users manage and track their daily expenses. The user can add, edit, and delete expenses, track spending by category, view expense summaries, and visualize trends through charts. The wallet balance is automatically updated, and all data persists using localStorage.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Wallet Balance Management:
 
-### `npm start`
+- Default balance is set to ₹5000.
+- Users can increase their wallet balance by adding income.
+- Expenses are deducted from the wallet balance automatically.
+- Users cannot spend more than their available balance (a warning is shown if they attempt to).
+- Add/Edit/Delete Expenses:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Users can add expenses with a title, amount, category, and date.
+- The wallet balance is updated upon adding or deleting expenses.
+- Users can also edit existing expenses.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Expense Summary:
 
-### `npm test`
+- Displays total expenses.
+- Provides a summary categorized by type in a pie chart.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Expense Trends:
 
-### `npm run build`
+- A bar chart showing the spending trends by category over time.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Persistent Storage:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- All data (expenses and wallet balance) are stored in localStorage and persist across page refreshes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Responsive Design:
 
-### `npm run eject`
+- The UI is fully responsive and works on different screen sizes, including mobile, tablet, and desktop.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Technologies Used
+- Frontend: React.JS, HTML, CSS, JavaScript
+- Charts: Recharts (for visualizing expense summaries and trends)
+- Modal: React-Modal (for adding and editing expenses)
+- Notifications: Notistack (for success/error messages)
+- Icons: React-Icons
+- State Management: React Hooks (useState, useEffect)
+- Local Storage: localStorage for data persistence
+- Styling: Plain CSS for custom styling
