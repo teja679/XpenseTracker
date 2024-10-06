@@ -12,7 +12,7 @@ function App() {
     return JSON.parse(localStorage.getItem('walletBalance')) || 5000;
   });
   const [totalExpense, setTotalExpense] = useState(() => {
-    return JSON.parse(localStorage.getItem('walletBalance')) || 5000;
+    return JSON.parse(localStorage.getItem('walletBalance')) || 0;
   });
 
   const [expenses, setExpenses] = useState(() => {
