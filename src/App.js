@@ -31,15 +31,19 @@ function App() {
       <div className='top-div'>
         <WalletBalance walletBalance={walletBalance} setWalletBalance={setWalletBalance} />
         <AddExpenseForm setExpenses={setExpenses} walletBalance={walletBalance} setWalletBalance={setWalletBalance} totalExpense={totalExpense} setTotalExpense={setTotalExpense} />
-        <ExpenseSummary expenses={expenses} />
+        {expenses.length > 0 && <ExpenseSummary expenses={expenses} />}
       </div>
       <div className='bottom-div'>
-        <div className='item-1'>
-          <ExpenseList expenses={expenses} setExpenses={setExpenses} walletBalance={walletBalance} setWalletBalance={setWalletBalance} setTotalExpense={setTotalExpense} />
-        </div>
-        <div className='item-2'>
-          <ExpenseTrends expenses={expenses} />
-        </div>
+        {expenses.length > 0 &&
+          <>
+            <div className='item-1'>
+              <ExpenseList expenses={expenses} setExpenses={setExpenses} walletBalance={walletBalance} setWalletBalance={setWalletBalance} setTotalExpense={setTotalExpense} />
+            </div>
+            <div className='item-2'>
+              <ExpenseTrends expenses={expenses} />
+            </div>
+          </>
+        }
       </div>
     </div>
   );

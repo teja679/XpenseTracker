@@ -182,13 +182,19 @@ button {
     border-radius: 10px;
 }
 
-@media 
-(max-width: 991px) {
+@media (max-width: 991px) {
+
     .wallet-balance,
-.add-expense-form, .expense-summary {
-    width: 80%;
-    margin-top: 1rem;
-}
+    .add-expense-form,
+    .expense-summary {
+        width: 80%;
+        margin-top: 1rem;
+    }
+
+    .expense-summary {
+        display: flex;
+        justify-content: center;
+    }
 
 }
 

@@ -5,10 +5,14 @@
   color: #fff;
   box-sizing: border-box;
 }
-h1, h2,h3{
+
+h1,
+h2,
+h3 {
   margin: 0;
   padding: 10px 0;
 }
+
 .wallet-balance,
 .add-expense-form,
 .expense-list,
@@ -53,13 +57,17 @@ button {
 }
 
 @media
+
 /* (min-width: 768px) and */
 (max-width: 991px) {
 
-  .bottom-div,
-  .top-div {
+  .bottom-div {
 
     display: block;
+  }
+
+  .top-div {
+    display: flex;
   }
 
   .item-1 {
